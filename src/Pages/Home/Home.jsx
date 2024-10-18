@@ -1,8 +1,11 @@
+import Hero from "../../Component/Hero/Hero";
+import Services from "../../Component/Services/Services";
 
 const Home = () => {
     return (
-        <div className="text-3xl text-red-500">
-            ThiDFSDF
+        <div className="">
+            <Hero />
+            <Services />
         </div>
     );
 };
