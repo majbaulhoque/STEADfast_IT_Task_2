@@ -1,25 +1,16 @@
-
+import Bg from '../../../public/image/bg.jpg'
 
 const Hero = () => {
     return (
         <div>
-            <div
-                className="hero min-h-screen"
-                style={{
-                    backgroundImage: "url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp)",
-                }}>
-                <div className="hero-overlay bg-opacity-60"></div>
-                <div className="hero-content text-neutral-content text-center">
-                    <div className="max-w-md">
-                        <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-                        <p className="mb-5">
-                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                            quasi. In deleniti eaque aut repudiandae et a id nisi.
-                        </p>
-                        <button className="btn btn-primary">Get Started</button>
-                    </div>
-                </div>
+            <div className="relative">
+            <img src={Bg} alt="" className='w-[100%] h-[90vh] object-cover' />
+            <div className="absolute inset-0 flex flex-col justify-center items-center">
+                <h1 className="text-5xl font-bold mb-4">Welcome to STEADfast IT</h1>
+            <p className="text-2xl mb-6">Your Trusted It Partner</p>
+            <button className="px-4 py-2 bg-black text-white hover:bg-white hover:text-black" id="openModalBtn">Learn More</button>
             </div>
+        </div>
         </div>
     );
 };
